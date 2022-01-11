@@ -2,32 +2,35 @@ package de.telekom.sea7;
 
 public class Whisky {
 
-private static int preis = 10000; // 400
-private static int netto = 8100; // ?
-private static int steuer = 1900; // ?
-private static int steuersatz = 19; // Steuersatz in %
+	private static float preis = 100; // 400
+	private static float steuer = 19; // ?
+	private static float netto = 81; // ?
+	private static float steuersatz = 19; // Steuersatz in %
 
+	public static void preisanpassen(float preisanpassung) {
+		preis = preis * preisanpassung;
+		preisrechnen();
+		steuerrechnen(); 
+	}
 
+	private static void steuerrechnen() {
+		steuer = preis * (steuersatz / 100); // 7 / 100 = 0 .07
+	}
 
-public static void preisanpassen(int preisanpassung) {
-preis = preis * preisanpassung;
-preisrechnen();
-}
+	private static void preisrechnen() {
+		netto = preis - steuer;
+	}
 
-private static void preisrechnen() {
-steuer = preis * (steuersatz / 100); // 7 / 100 = 0 .07
-netto = preis - steuer;
-}
+	public static float getPreis() {
+		return preis;
+	}
 
-public static int getPreis() {
-return preis;
-}
-public static int getSteuer() {
-return steuer;
-}
+	public static float getSteuer() {
+		return steuer;
+	}
 
-public static void setPreis(int i) {
-preis = i;
-preisrechnen();
-}
+	public static void setPreis(float i) {
+		preis = i;
+		preisrechnen();
+	}
 }
