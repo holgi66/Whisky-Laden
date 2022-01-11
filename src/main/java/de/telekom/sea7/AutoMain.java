@@ -17,10 +17,10 @@ Auto a1 = new Auto();
 		Auto a2 = new Auto();
 		a2.setsHersteller("Dodge");
 		a2.setsModell("RAM");
-		a2.setsAusstattungstyp("Laramie");
+		a2.setsAusstattungstyp("TRX");
 		a2.setsMotor("HellCat");
 		a2.setsKraftstoff("Benzin");
-		a2.setLeistung(710);
+		a2.setLeistung(711);
 		a2.setHubraum(6200);
 		a2.setBetrag(85000);	
 		

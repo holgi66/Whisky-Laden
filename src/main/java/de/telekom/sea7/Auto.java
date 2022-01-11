@@ -11,6 +11,7 @@ public class Auto {
 	private int hubraum;
 	private int betrag;
 	public String getsHersteller() {
+		
 		System.out.println(sHersteller);
 		return sHersteller;
 	}

@@ -39,4 +39,6 @@ public class PunktMain {
 						p3, p3.getX(), p3.getY()));
 	}
 
+	
+	
 }
