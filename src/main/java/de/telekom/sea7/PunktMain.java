@@ -4,15 +4,15 @@ public class PunktMain {
 
 	public static void main(String[] args) {
 		
-		Punkt p = new Punkt();
+		Punkt p = new Punkt(0, 0);
 		p.setX(2);
 		p.setY(4);
 		
-		Punkt p1 = new Punkt();
+		Punkt p1 = new Punkt(0, 0);
 		p1.setX(34);
 		p1.setY(56);
 		
-		Punkt p2 = new Punkt();
+		Punkt p2 = new Punkt(0, 0);
 		p2.setX(424);
 		p2.setY(536);
 		
